@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # EMIPredict AI — Intelligent Financial Risk Assessment Platform
 
 [![Python](https://img.shields.io/badge/Python-3.11%20%7C%203.12%20%7C%203.14-3776AB.svg?logo=python&logoColor=white)](https://www.python.org/)
@@ -299,3 +300,7 @@ mlflow ui --backend-store-uri sqlite:///mlflow.db --port 5000
 
 **Developed for Internship Capstone Assessment • October 2026**
 
+=======
+# EMI-Predict.Al
+EMIPredict AI is a machine learning platform for loan EMI affordability and financial risk prediction, built with Python, scikit-learn, and Streamlit. It uses classification and regression models to deliver data-driven financial insights through an interactive web application.
+>>>>>>> 64fb92ccfffc4eeb911f1d0aebd866e795cee850
