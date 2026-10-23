@@ -1,0 +1,4 @@
+model,accuracy,macro_precision,macro_recall,macro_f1,high_risk_recall,high_risk_precision,high_risk_f1
+Weighted XGBoost Classifier,0.927,0.7084,0.6811,0.6815,0.1395,0.3243,0.1951
+Logistic Regression,0.7815,0.6311,0.7082,0.6199,0.5698,0.1279,0.209
+Random Forest Classifier,0.866,0.6121,0.635,0.613,0.1163,0.2174,0.1515

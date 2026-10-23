@@ -1,0 +1,165 @@
+{
+  "model_version": "1.0.0",
+  "training_date": "2026-10-19 16:54:30",
+  "dataset_name": "emi_prediction_dataset.csv",
+  "dataset_records": 404800,
+  "input_features_count": 25,
+  "numerical_features": [
+    "age",
+    "monthly_salary",
+    "years_of_employment",
+    "monthly_rent",
+    "family_size",
+    "dependents",
+    "school_fees",
+    "college_fees",
+    "travel_expenses",
+    "groceries_utilities",
+    "other_monthly_expenses",
+    "current_emi_amount",
+    "credit_score",
+    "bank_balance",
+    "emergency_fund",
+    "requested_amount",
+    "requested_tenure"
+  ],
+  "categorical_features": [
+    "gender",
+    "marital_status",
+    "education",
+    "employment_type",
+    "company_type",
+    "house_type",
+    "existing_loans",
+    "emi_scenario"
+  ],
+  "valid_categories": {
+    "gender": [
+      "Male",
+      "Female"
+    ],
+    "marital_status": [
+      "Married",
+      "Single"
+    ],
+    "education": [
+      "Graduate",
+      "Post Graduate",
+      "High School",
+      "Professional"
+    ],
+    "employment_type": [
+      "Private",
+      "Government",
+      "Self-employed"
+    ],
+    "company_type": [
+      "Large Indian",
+      "MNC",
+      "Mid-size",
+      "Startup",
+      "Small"
+    ],
+    "house_type": [
+      "Rented",
+      "Own",
+      "Family"
+    ],
+    "existing_loans": [
+      "No",
+      "Yes"
+    ],
+    "emi_scenario": [
+      "Home Appliances EMI",
+      "Personal Loan EMI",
+      "E-commerce Shopping EMI",
+      "Education EMI",
+      "Vehicle EMI"
+    ]
+  },
+  "classification": {
+    "target": "emi_eligibility",
+    "classes": [
+      "Eligible",
+      "High_Risk",
+      "Not_Eligible"
+    ],
+    "selected_model": "Weighted XGBoost Classifier",
+    "metrics": {
+      "accuracy": 0.886030138339921,
+      "macro_precision": 0.7351155414004381,
+      "macro_recall": 0.8680301984970974,
+      "macro_f1": 0.7478640416871007,
+      "high_risk_recall": 0.8561624249356591,
+      "high_risk_precision": 0.26465128613099975,
+      "high_risk_f1": 0.4043214044564483,
+      "eligible_recall": 0.8521727449795151,
+      "not_eligible_recall": 0.8957554255761179
+    },
+    "all_models": [
+      {
+        "model": "Weighted XGBoost Classifier",
+        "accuracy": 0.886,
+        "macro_precision": 0.7351,
+        "macro_recall": 0.868,
+        "macro_f1": 0.7479,
+        "high_risk_recall": 0.8562,
+        "high_risk_precision": 0.2647,
+        "high_risk_f1": 0.4043
+      },
+      {
+        "model": "Random Forest Classifier",
+        "accuracy": 0.8593,
+        "macro_precision": 0.6622,
+        "macro_recall": 0.7491,
+        "macro_f1": 0.6804,
+        "high_risk_recall": 0.5305,
+        "high_risk_precision": 0.2033,
+        "high_risk_f1": 0.2939
+      },
+      {
+        "model": "Logistic Regression",
+        "accuracy": 0.7854,
+        "macro_precision": 0.6478,
+        "macro_recall": 0.7306,
+        "macro_f1": 0.6298,
+        "high_risk_recall": 0.6526,
+        "high_risk_precision": 0.1389,
+        "high_risk_f1": 0.229
+      }
+    ]
+  },
+  "regression": {
+    "target": "max_monthly_emi",
+    "selected_model": "XGBoost Regressor",
+    "metrics": {
+      "MAE": 602.6158427484534,
+      "RMSE": 1013.115234800893,
+      "R2": 0.9830088954889189,
+      "MAPE": 26.86565226994353
+    },
+    "all_models": [
+      {
+        "model": "XGBoost Regressor",
+        "MAE": 602.62,
+        "RMSE": 1013.12,
+        "R2": 0.983,
+        "MAPE": 26.87
+      },
+      {
+        "model": "Random Forest Regressor",
+        "MAE": 859.43,
+        "RMSE": 1448.23,
+        "R2": 0.9653,
+        "MAPE": 23.88
+      },
+      {
+        "model": "Linear Regression",
+        "MAE": 2584.59,
+        "RMSE": 3915.17,
+        "R2": 0.7463,
+        "MAPE": 115.45
+      }
+    ]
+  }
+}
